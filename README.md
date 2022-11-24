@@ -28,10 +28,10 @@ To run the server:
 python manage.py runserver
 ```
 
-<h6>Describe how you would implement an authentication layer for the web application.<h6/>
+<h5>Describe how you would implement an authentication layer for the web application.</h5>
 Djangorestframework have token authentication using rest_framework.authtoken on your INSTALLED_APP and TokenAuthentication <br />
 to REST_FRAMEWORK, migrate will create the table that will store the tokens so is needed to create a user account with <br />
-python manage.py createsuperuser --username felipe--email felipe@example.com <br />
+python manage.py createsuperuser --username felipe--email felipe@example.com <br/>
 python manage.py drf_create_token felipe <br />
 now u can use your token with the API request <br />
 http://127.0.0.1:8000/API 'Authorization: Token ashu1uhi23hui1uashiuhi'
